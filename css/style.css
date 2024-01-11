@@ -1,0 +1,206 @@
+body{
+    background-size: cover;
+    direction: rtl;
+    background-repeat: no-repeat;
+
+    background-position: center;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /* font-family:'thuluth-decorated'; */
+    font-family:'cairo-bold';
+    outline: none;
+}
+.header{
+    height: 750px;
+    background-image: url(../images/photo-1567712595315-545da0d341b2.jpg);
+
+}
+.nav-item a{
+    color:#fff ;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:focus,
+.navbar .nav-link:hover{
+    color:black;
+}
+.animation {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    text-transform: capitalize;
+    position: relative;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: center;
+}
+
+.animation::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    left: 0;
+    width: 100px;
+    height: 10px;
+    border-color: green;
+    border-style: solid;
+    border-width: 1px 0;
+    margin: 0 auto;
+}
+
+.animation::before {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    width: 200px;
+    height: 1px;
+    background-color: green;
+    margin: 0 auto;
+}
+.hadith{
+    min-height: 350px;
+    box-shadow: 4px 4px 4px 0 gainsboro inset, -4px -4px 4px 0 gainsboro inset;
+    position: relative;
+    color: #000;
+    padding: 50px 20px;
+    position: relative;
+}
+.hadith .number{
+position: absolute;
+left: 0;
+top: 0;
+padding: 10px 20px;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.list .surah{
+    min-height: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.3s all;
+    color: #000;
+    font-size: 17px;
+}
+.list .surah:hover{
+    transform: scale(1.05);
+}
+.pop-up{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999999999999999;
+    background-color: #fff;
+    overflow-y: scroll;
+    transform: translateX(100%);
+}
+.pop-up.active{
+    transform: translateX(0%);
+    transition: 0.5 all;
+}
+.pop-up .close{
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+}
+.pop-up .close:hover{
+    color: rgb(106, 255, 0);
+}
+.pop-up ::-webkit-scrollbar{
+    width: 10px;
+    background-color: green;
+}
+.pop-up ::-webkit-scrollbar-thumb{
+    background-color: #fff;
+}
+.pop-up .ayat{
+    padding: 20px;
+    font-size: 20px;
+    line-height: 2;
+    text-align: center;
+    width: 100%;
+}
+.pop-up p{
+    font-size: 20px;
+    line-height: 2;
+    text-align: center;
+    border-bottom: 2px solid green ;
+    margin-bottom: 10px;
+}
+/* .contact-section {
+    background-color: #f9f9f9;
+    padding: 50px;
+  }
+
+  .contact-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-message {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-submit {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .form-submit:hover {
+    background-color: #0056b3;
+  } */
